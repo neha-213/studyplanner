@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Study Planner</title>
+  <style>
+    body {
+      background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMSEhUTExMVFRUXGBgYGBcXGB0XHhsYFxcYFxYaGhgfHiggGR0lHRcXITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OFxAQFy0dHR0tKy0tLS0tLS0rLS0tLS0tLS0tLS0tKy0tLS0tLS0tLSstLS0rKy0rLS0tNystLS0rK//AABEIAKgBLAMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAAEAQIDBQYAB//EAEEQAAECAwUFBQYEBAYCAwAAAAECEQADIQQSMUFRBWFxgZEGIjKhsRNCUsHR8GJyguEUM6LxFSNDkrLSFsJjc5P/xAAYAQEBAQEBAAAAAAAAAAAAAAABAAIDBP/EAB8RAQEBAQADAAMBAQAAAAAAAAABEQISITEDQVFxIv/aAAwDAQACEQMRAD8AxgmNWK+XZEJwSOdYkQpTMS/l5CEJjh8dTwYULiEmFSYkIEIYagw8wEjRwTESrUhOKhwesCT7aT4aDzhxWjZ05KMTXTExXzbUThQRAqEGkOM6WFeLnZvZ5S+9NdCfh94/9fWL3/DpKUt7OW28D1MZvcjU4tYkGOjar7PSlAESwxzSSPnAy+yaPjWk/C4V6B4fOC8sm8K8aSZ2TOU0c0xCrspMymJ6fvDsWKGFvNXRz0r8otrT2dmIBKlIAFS5ampiitSmSrp1P0eHn3RfQGXhGk7FSHnqXkhB6qIA8r0Z0CNp2IkNKWv4ltySPqox1rEaUQ4Q0Q4RybdCAg4VEco0+xCJ+3/aJFaEwc4anhCxxEKcDoxiKZLJILJLD3hXkcukSpQBgBvhyTECJT9BDo6OaJOhRCCFiRDHmm17R7SdMXqot+Ud1PkBHoW1J/s5MxeYSW4mifMiPMjGpBTFlhFx2fktJUvVTDfdDDzUrpFJNNI0UpFyWhGiR1V3leZIivxr8f1UzPEeJ9YcEiOWO8ePqYeINaWJMNUuGPDL8cweTCpXEK5jRCla1qCJaSpasAMYZBaJn2wJpidB5RdWHZ/s0CbbKA1RIGKj+PNt3XSEsthl2ABcxptpOAxSh8+O/HRsYrbZa1TFFay5P2ANBFV7X3/lFP5KCNAWbyIiJW2rKqsyyJ6IV6gRQyUKWbqASd2m85CL2wbESljMZR+H3R/29IzepGpzqazyLHPBKbMpI18APApVE1j2XKlG8hDHUkqI3AmDAQNfvdHE745Xu1055kKTCpmN9iIy+4xGX0jLR82xy1VMpFeRPMYwLbdnBZvFUxJyuqp0aJDwhFTT9v8AWNeVZvKqXs20DCaW/wDsUPLCCtlWG0E96bMCQcL5PU/KLOzWQqqokDTMxZkJlpvLISlIq9ABvMbltc7kVO09liYnvkkPqRXrU8Y8+2ugJWUB2ExQroksPWNL2j7U+0/y5LhPx4E8BkPOMvakkFJBqEjGtSSS/XyjrxMrNuh49E7P2e5ZpQ1TePFZKvnGCVagfFLQdbrofoWGtBGhs3bBmCpdAwHAY1HLKOl1mNcIc8Z+R2qkKLFxvFR5sfKLOTtWSrCYnge76tGMOi1/dAerw4QxnY0O9n6HKFKjkPOI6e8IVNiw8obd1J5d30rDgkDLnEiBb4V9OufJ4aZbl6DgK9T9IlAhREDUIAwfmXhY4QoiRY6OjoUz/bS0XZKUfGqv5U1PndjEGNF21n3pyUfAgdVd4+V2M4YYzXWeT7SYhJwJD8MVeQi1nT7xJwcv1rFds3GYv4UkDis3P+JX0ggqi6b4MUaw4CGmOvxlqiVKiNcyI1Ko8HbE2PMtJKv5clPimHIDFnxPpnvMZ1DYLDMtC7koOczkkak5RpL8qxJKJLLmmi5py1Cfp1eINq7R9gkSLOhUpGa1AhUzUgkYb89wiiE0mDQmnzCouSSSeJJ+ZixsGxFLYzHQnT3j/wBfWDdgSEezEwJddQScqnDSjRa3xpHLrq/p05k/ZlnsyUC6hN0bvnrEhEJfGvyhCuOToUmIlERxhkJK8NMKYkkWYrrgNfpENQpc0Dl8osbJYGqaq8hBNmsoSKUGZzMUXaLtUmQCiSLyxQq91J3nM7o68ca59d/xa7V2tKsqb0wur3UjE8BkN5jA7Q2laLctsED3ahCd6jmfsQyz2CZPV7WepTGrnxK4fCPsQdMtSEAIRdSObb3YGu8x2mT59c8/aIyESE/ErNTV4AZCK6faH90au9GL0LZ8+UOnzS4cgFz3kqem9lYjSkIVKJDqSutL3d07zKKXPA5GNSf0ajlS0rceCj94gUZ6O2OWsNFjd7qnbd88G5xPakAKLp7pUaklN6ob2iiSUp3Xt8MlpDnvhDquqKWCWcMJd3unLE/U6AZdkVo43fWIheTgSItpM6Ym8lCUEFWCgld3J1TBnTWIE2rvVBIwDVKjqAQ+O+JBZFumIqlRHCh6hotLP2pnpxN7iyvWvnApEsg3gAoFiA9N5LEecd/ABRCUkknTv78U3oKl7Zu2QpfQORKfW8POLazdpJC8yniAfNJPpGM/hnpdSr8pY9K+kCT7OzMkjV9fWDIdenSLdKV4ZiTuvAHoawQY8mE1QpeI3H6GLTY20JiSs3iyJUxYAcAkBkuBQh1A8ovFa9GvDXzhRGK2Z2nnr7oQqYoCpYK5qoLo3vFt/wCSykllLlhTVuknvZggBQ53ngw60AjhAVl2pKmB0rBbFqs+HEb4btHaKEyZikrSVBJYOHvHuimOJiTB7VtHtJsxeSlFuGCfICAl0EOakQ2lTD7yjUYF2RLSh+NZVyQLo81L6Q4QtpNxkn3EpSeLOr+oqh8oS1DuzQ+igU+Zp5xmuvPxGYYYNXs2azhN78rH0iI2GZ8CoDi12L2fvJ9vaTckjAYFXAYgHXE5axJtbbKlsiWPZykNdQG90uCcssMOOMaO07SsE8C/NllsLyihtcWiD/ALHM8Cj+ibe9SYKxFIrtSpRQmfLvSwTeaoUW7pKdxyrFhLs1gtP8pXs1aILdZavkBDpvY6X7s2YPzBJ9AICndi1HCag6Okp8wTF6Rtq7Mz0G9JWF/lUZauhLecAr2napKrswHhMS3Qhn6mLGz7Mt8n+XMlzB8Kl3uhIB84tJO0JzXZ9mWBm12ck8Ug3vIxYlJJ7Sj35ZG9JfyLQXL2lZ1++EnQky/Nx6xPP2JZZ3hBln/46NxlqFOgintfZSaHMpSJo0e4roaHrGfHmnauv4R6pmTB+q8PN4Is8lvFMUeIHyjDLlzJJZQmSTvdD8CKHlGh7NqnzL0xc1pKAbylAFyMgWyzLwX8ZnbUy5EotUE6P8oKmKShJWshKQKk0AAjDzO1aUzf5bpBBBBYsDmDh1zgK12m0bQU5NySDQe6P+6vTdGufx59F61ZbX7WicoypV5KG8QoVa70jzO7OgVPLACgGAEW4s0qUgoQMcVGpO9/lFHaCEkipI5dDGpl+BZWq1KUmj5b3pXOnSAfZrXlebAAJByxAAUqkRJtihQAc3MGWWeVJJpixTq4d20p1EM9D6EMtq30u2BBBzcVDUZngiWhQCipBqnFIWCsKIYEpdLNqBlBEuczhgQWdwDhQULp8oSTZ0KdwoYVSSGDAByxf/b0EOrAslTe0KFKSUpqADdR3mDKSup4g1MNRaCSSp1MHQWY3gXdwpJQMS4fnE9tISEoSlMzQqQSuuROgOGBNYBRPSLwWFpUQymY5g+FQdPIxoHuL1WSUuo1dy9QSSFLOTA674VE5V68FByX71GD+7ewoTn9YWVMDEBYusWQVFLEnEukpVyOeUdJBBPeuulQMwFQCnHgBSCCMsIkbQKJKHSCSE88VYg0LQiwkqV32rVeOfukP1h1jFRdBcuyGUcsXQQp8csoSUlSyxZdWUSHIf8AC4Uf2hRVSjfISHr3UveYUclw/wBnSJLVaVhRBYNQsCEuzMAXHNg+NIhml1d8KClFqklRyD3i6RhnD1AhTXgSkMQrBx3SVElSeh6QJJaJwdKfZkEgUVQ1evdyavheDNjyZalqLgIYoWX92b3A1HBdjhlAE2WSyiCXe+qhDA4JUkqyybIRYWSSmdZZl0MJJCyks6glKwSpvzPh7pGUFQbaCFKBluEISpvZjupChTvEtfVTEkxXLsSxlT75RoZ2z1zAlSlGWboVNJvB0IBaYEFrxYAGlCxzgFW0Ey0n2chCUjBU4X1relMEjPAECAquzLXKUFpcHg4IOIIwIOYjYbOnotEohKihQDfEUaCvjRlXKlCBEGwp8mYAqeZKFX2Mu5KSbpFFAlLn9osdp22xSQFyyhSgR/LSlyDiLzMzVxy5QVRmdoFcld2dKlr6pvDUKDUpyesAouzJqO7dS7qBL0S6lV/KI2Fktcm2JKJiFACtcQ9AUqGrM2cVlu2fZZTpM5UtZBSzKmpDs7MhJYij1oS0Uqxnps28STiS54mpifZK0pJJCScioXgK6YV1YtDbRs9SQVpKZiBiqWbzfmDBSOYgaWrTERprWnFvKqLLHyI3EUMHSxSMtZrRucZp+Y0MXditiQgC8Ka0I3GM46Tpkrh1hLp0g4yhE9g2XMnKaWl9SaAcT8o15OPiBl26cjwzFp/KpQ9DBsntNaRQzltvZX/IGNds3svJlsV/5ixVz4f9uBHF4ulJBxA5gRm9z+LxYJHbS0JzQsfiTXyIg2V29me9JQeCin1BjTzbBJV4pUs8UJ+kBzdgWVWMlHJ0+hEHlz/DlVo7bSVeOQoflUD6tEqe09lPvTE8U/NJMSnstZT/AKZHBavmYgm9jZB8KpieYPqPnF/wPYkdo5RDe1RMT8K0kHzDHyiO3bQs0+QJSJyZDVAYBJ0BTo9aZ6xVT+xKxWXNSdygU+YeKXaeyZskgLlqSNSxBO5QpyxhnPP6q2ppWzbqjfKVMfdN4HN7wxEXsy190AMAKACjRlEz1y8CeBqIKlbV+JPT6fvF1zb7UqzmzIrZ3eLDF2bd+0EItSFYKHA0gW22cmoxg5mGiE7KV70ySjcV3j0RegiXYpSEqUJ5UqgCQgpBc17xrQVwyiulzi1cYms6wVAHB/lDYNGypT1wH3hBG4UEI8LHP22Qh8aw2ZKChdLs7s9H1bCHxzQ7RivmbLGSm41gdWz5iap8ouY6GdUYopXtAWuXjjVJJpvHeGWcJLnS3DghiCAAFh87yVF1dYviHxDw2ZJBZ37vhzbg8a84vFX+xWAtUtSQHAIohI0TcUWfrEdoDeOWyAKkMm8qoChdDAGlKtFqmSLoSUpUBg4HzBPRSYEl2RKZhIJl70uCMGAcqxzc7o1OozgE3SpKiplKAZw5SzAE3QHBGDDjFrsm3qkqcqE1F0pmEKBNaDFlNRq4ud0C2wG9eUUlJcuEJBrS6CknXG9nDfZy1JCUlSAqoDg3sRmH1apaK30o2ae0Fn9mUzFKStiUhSFXsCzAjiNGeKGZYpa2myV+zT70pSrqQo1CSrBAJIoaF6HIVBtBQFJDsMgXAA3Rc9jLKlRmTVGriWOKmdxm7gaVMZ+Qq5VgnyvFZ1LJLghClNoQtGPUwavZ6pgaan2QFBMWACWxuoDKVnWripbK027s+TZ7veMm+4CpZWhNG8QSWS74hJwwilVZ5iUOrvg/6gV7RJGQv/Isd0WrElrmoSkIluJaKucVFqrVvbDQc3Kn2ZM6zSZk5N1VUmYpQQoJdZQTfP8AmBgKYm84IgSx2syQZgCSoXUpvVAKgpV4jdcoNSNIam0Kn2eZLKiuaJnta1KgzKbUhyWGg1giDyNkzEn2kmfKVdLBSVK/q7hAB0JbjD7dZUrl+2UgIILLVKIUl8HYFiHxFFDeMKiRNVLUFy1FKhgR91EaCRtdU1KpsxITcF0zE4KUpwEs3eNXY3gycI0mcmoul0kHeC4O/dzrEiZ6TiIOtdhQsGbZ2LeNCXw1Sk1G9OGlKCq9i9QaRotlsvs07KnUHwDH9R+QjRy0pQLqQABkPoIcp/v94Y7a+fyEefSVR+8PWG+0P9nMMUvl0H1hCp/smJHGZv8ASOSrh0/tCITX+3yeHpA4569cSOkKck7n4ftTziVH3/eGtm7+Y5ElhwcQ8egq9Or1HNxCkgTD/ZAgggEGhBqDxERyy3Df9930MTpQ/eTzHyMMgY/tH2WCQZskFhVSMWGqd26MhMs4j1+0WhKBWMoNiy/bKXdoahGSSceO4ZPD5YsYf+EUfCCeTwxM1SC1Ru/aPV5CWFKeUPnWZKwy0pUNFAK9YZ+T+wY8qFovGuOGETCNntDsdJXWWTKVu7yehqORjObR2NOkVWl0/GmqeeY5tGtlGJLLPCk1xGP1icRSmWasSDkcOHWnWJJe1sL6asA6abqjWM+P8Mq3hYFk21CsFjgqkEjeOlYxY1pzR0ckvhCwF0LCNHKLViRJkxhAhU+MctTlzCNCnPEaZSQXugHdErQtx4dB8iUhCQQKrFbzEUUUvzKSeGsFJvSEhckLSVLIUkMrC9lgalGGpiOcL6EEu6RcP6S48lDrBU60OlKS7p7z8e6fMJMWjHI23arpUZv6VpB6ABJYb45PaNUvvLkyycHQ6H3ZmApqnirtsy8psk04nP6coZ7K3O3bOsKEyygBTXjLIBJGBpdrU1JNCdYITY7GQJktc4MxdKvCcatLUpHEiMy0WuwNkKnKJClIu0Ck43izDg1TxEa+DFshFlmqvKFnKq19qA+hWn/LvHWlYD2lsK0zSnvylSx4AlSUpSNAgOAeF59Ynt+xLSh39laAKd5Iva4llf1RW/xKpBf2JlnNlzUA/wBbGCVYjQhNkU98rnMQlCUqCXII7ylAFQr4QKkCsLa75mLaQmYAoi93n3glKgFEGjmtKkx1o7S2lWCgkbkhXmp4F/x20fGn/wDOX/0jQvp6J7Q/hPNvrCe0OaTy/doaUP8AZ+ZMKmWdOn2I87RRMfUcn9HhyQDofvyjgk/3/f5GJEHKvLH/AGn5PGkUS/v9jC+zPH5cj8iIehQIfEaj5jKJgIsAeWl8w2D4vufM7lCHCWoUwOo0/Dofw4RKuS9Qz5vgRoYdLR3SFO2/EbiR6xsVFKluKdcmbTfmnKGWq2Jl91NVafU6cYgt+0cUoamKsh9TuitlJvYV1OJPFgekZtMiX2hUXcE66bh9YIlJYZ+fzIflCSkZff18omRh9P2oOYEBSpV94/J/LKJEqHD06xGedMt3DDmC+6OWf77uJHkoc4UnhWiEKIwo2TabseYcRKlQO705a5w4FHtPsxLmOqX/AJa9w7pO8ZcukY7aeyZkpTTEM+BxSeCvljHqAMMnSUrSUqSFJOIIcQy0PIV2WElKmI8KiN2XTCNvtXsn70g/oUf+KvkesZe02dSDdWkpUMiG++Mb8jgEW1YNSfIwZJ2sc/L6H6xEqVEKrKIvVGWLqVtBJz+XrCzl3uEZ8yiMDCy7QtOo4fdYPCfo6vGjmiul7UOYB8v2gqVbUHNuP1EZvNOp454ckg1BB4RxRGSdKmOFJq5AbOqXOVcH8tIdKTMwSLw/CQol2oEiuT4ZQOCUkKGIII4gvDpqbq+64Se8GcMnxDp6741jNGWmzKlJKpjII8KSe8rS6N+pZsYpMampNTxNYntHfSmZ+g/mS5H9LHrpAzwyFJKklaglIcqLARr5yzZpcuTJrNUbqSAHc+JVaZ8oC7K2GhnroKhD6CilfIc9YL2akzpip9ReJlytyR418hQHUtBfqoc7StSA8yWVAP3rrYEgm8nu47o6btxZAuXUg1UlaSoEv8aS/JhGslpAASmgAYAHADChga07OlL8UtJOrXD1FYzs0MbNWiYe/ZgRmqUpzvLJ9DA69m2MkkWkoHwqTUf0xprT2ZQfApSdLwvDqGPnAJ7PT8lJUMjf+qS0alS9CTmW3D64nyh4lDVQ/Uo/OHpD7olSmOZR3FDAhW5VPMD1EchIUCBRjVCsqeXEQQExHPDFKhjeCTvSrL5xqQGksSaghn1A3j3knXGJpR3Mcw7uPiESqQ4pQ5H7xG6I5s5MtOn3lGklWsJDmKS37Sve9dTrgTw3b4Zap5mHvAtkn5q+kNlysyBzcMOkZt04ZISlTMQ2gJiwlyB91iP+HlmpDbzXzq3XKH/wy01Qpxoa5dR5wLU4kZeRqH9fOEKSMaaFyw/UO8ObiHom6+UTpOkQD3cWBOGFHBzbBT6hjCClcWo+mNHNU5UU4pD59wCpAGYyL6xWTtpFRZCSpVaivCuJHERrUPvMGZsPthUfmT9YAte3LOg3TNS7spgVtn3robnQxnttzioXVzCMWly+8+oLG6Buc8IqrJJVNUESZVwH3iCpR1LnLPugDjGsTdWHbKZiikJXg/eASGdqPXRrwD6xZoW+HMGh/bnANksiZaWSLoZqN3ueCn31iRGum40xPFI3FxAhSl60bWIrXZETU3VpCxvy3g4jlEkkkitfvoeIh7QBlNodkjUyVP8AgV8lfXrGatNmXLVdWkpUMj9+Yj1OWmKnb1ll2kXGJWnwqT7vHJjofWHS87aDNn7HmT/Anu5rNEjnmdwjTbL7JoQypx9or4cEDlivnTdGjSlgwp9+XCK9Jg9q9j1y03kH2gA7wAYg5kJcuPOM0qzkYGPYn+/vCKba/Z+XOdSe5M1GB/MnXePOLnu/tY80dST9KekFStpqGNeP1EHW/Zy5KrsxLaHEHeDnAKpQjeyrBlnt6VMCCODH6QTteYEJTKSpKsyRkCXuGpzr1iql2fICLCVs2rEimnpGfSDSprJUlnCm5FJoRvxHOJdnWIzZiUCj1J0SPEflzEJbLOJamd6RqezlhMuXeI78xqaD3R/7GC0o+0FoShCZKe4ksC3uoDDDg1OMW2x58lX8taaC4hLsoITm2LqPePLSLG1WNEwMsPRic/2jDW6XZb5T30ge8ACH4O+FXrAG8I+yHjh9sXEYySm1SwFSZxmS+o4MsOMMmgqT2lmJ/nSf1J7p6F/URYmnA08qeUIR9lL+kV1l2/Z5lPaXd0wXfPA9Ys0KcOHI/CqkWJGhP9v3iSVX94TCp8LY6cfrDppSliccmqTw1ixH4VOERS03yFGiR4Qcz8X0h3siqq6DJPzOsCW7aNbqKnPQbzEk9ttwRQVJwAxinXMKi6iCryHCtTvhiC5NXJxLhzwD0EFy5bemJT6uDGaSS5bYjqCPMPBiABXAa5RGEsa0O/unqKH+8PKgOLVwSeLYGJJEy6uzVxTnxGccA1Qenk4+jRSW7tJLlkhHfV+HD9RwfhFTP2jaJtVKElJyTQ9cTiY1gau02xCaL8WAu1J4DE8GgYGauoZCdTj0dup5RQ7GsrreWL5SUkLWTTOgfHHE8jGumyLxvU3A6btOkWJS7TsyUJCypayCynIALvXB8mYNjFfZfb2hxLSJaBQqLgPk1De8+MatgaeFWh+68oY5SW/tyiSms/Zq6O/MUs5gMnocfSLGx2RCKJSBqWzFXU/efeDnB8uYD9IVaQceufIxag/U9Kir7lUYVrjDkocs+Hkd1XSd1RDZq2zp94jA54axAraCRgYtWDnaGTZyUh1FhGX7SbXmpSn2SruN5gHbAMThy1jIT5y1l1KUo6qJV6wyaq9CtO3pGCpyQPhlm8eZS7cusF2O3S1oCpdUF2YNgWNMXcZx5glBjWdjCrvyyaeMbi7KHDw+cPjBrTfxodqPo/7RD/igyBPBKjhjlE6bOMYFWu+SlBZIopepzCfr0izFrlbUq11b/k4ZEvCfxsw4JPMj/wBQqC5dnSlJYNUdadTCUiwaDnXpgurSFJdyCCoeYDcWin2vsK8ykICKMQlKiDobqU0MaQL0iaWlT1BaEx53/hywe6y2xulzzTiOkQiYQY9Etuy5c7xCuShQjnnwMUM/Zir/ALOYL7+FRoSke9exBGYLxjWlNsix+3mi9VKWUrf8KeZ8gY2NktSAsucKA0YEu71cOzAs1NTAezrKizi4p7pJN8amgvH3WDAZUGcPtFmUnwm8GoFPT8L4MWDigoGYxf6BG39piXJJSXKgw+f066RgpCStQ4kk+ZJ9eUW+25M1RcIVcTnQ8yRR/mTHdm7ACu8UqIFVUchIPm6mHBJh1NNs+QZctKEsmYvvEEEskAMDwDDi8V/aa2KDSkXAcS4euJYEEadTFyhVDNUK1bI3XYA51LUMYDaU/wBtMUp82G+uPVzziqWNhssqaoILBRaqHz1Fa9ILm9llg9yZ3d9PIRJ2NsJAUtQwoOP7A/1RqIFTVTiTdQHOZyH1O6HIQEd4l1ZqP3QQkyamUnQCKa1WlUzUJ0q54tgIrcSa27QKqJLDNXyH1gSXLfIgcCebg4wstD79wLeREFJlto7flP8AuwjP0ulI0ctkDey0NRnDlTAgEjy9Ck4coSZeyBJ0VQ8lDGAJtimzDU1yBNWzb4sIUS07aAoip0FRSuDOOAjO2mdMmUnrIA9wN6fXfGnkbGFQS494Jx0Y4EjdUQRZtlykG+EhwKKNRSg7vu8t9Y1Azlh2etTezl3cwpdH4a8ot7PsFILzFGYRi2AP4k4kb4uiMHZqUNRyVi+cMFTmSOShzwUIk6R3QAlgk4D3eR93gYnlrDlnBzSeWAiEKDEuGzUA4z8ScoaksbuH4T17it5y3RIStAOMIXFPEM9emfrEaJ2OJZgfiG8jTDCJkro701gSH2b1SXH391jhNOB/eFmEYux115Zw1S3r5mp/aC1QPbUFQ0iqVKIxBi9Ko4JG6M/SyG2ZJWigcj9j6gRRpsC/hMemhA3QoEMuCzXnMrY05XuL6GNF2Y2PNlTSpSSBcIqRiSk/IxpL0OTMh8lgPaalIQAKKWbo3Zk9B5xLKsoAABYAQLtaZ/mSt1/0aA9ubeEgBKQDMIeuCRqddwh22rF9OKACVFg+JLDrFcva9lT/AKiT+UFXnGDtu0pk1V5aiTloBuGUCGaYbKZHpA7RWf4z0aJ5W2JCsF+n1jzETY4zYPG/1r09blTknAxJOlgitGwMeWWO2LAJTMKSMnIej0GBw84u9n9qVBhNF4aih4thBlgxcKtxS4myyneBeSoccuBhtmtiUFkqvSzxdD0GNbmW6LSyWtE1LoIIzGnEQydYUnJNaYfOMg9Jagwd23wIbIUqKkEhRxIo/EYGAPbWhBuoSmYEUKCbqqYFJwIYjGHy+0Et7s0Lkq0mJIHJWDby0OIdtSXMXKKQsO1S13d84x8/ZSx4hz1+XnG2kzUqF5KkqGqSCOohyUgFwA8OpV2GcuQ0tnSztrqUkO/292hNoLcCAQnHVvkSIHttkSsVSHd6U9IiMhWnmIfIYgnTFLLqqckuKedTDkys6P8Ai7vCtRHR0ZIm7RjT81Q35olbWm5XeT1yjo6EHoDbq4KqOKTHGpZic7qqEalKs/7wsdDE5Jd2ctTRadeOUK2JfdeG7JSY6OhRp5B9apU+hyMK2IqWNAaEflVnT0jo6JGqBBzdgLwxD4X088Y5SqGgy3pUK4fDQQsdESKXTOmT94cDgoYwHZ9oJWoh2JNKMTu3H1jo6M9IU0dCx0YRRCiFjokQmI1TY6OgahhnGF/iDHR0GrCOJi0pNPEOof5RgdshQnTBMe9eL/JtzM26Ojo6/jFV6ljKGvHR0dWa54WEjoUV4W/HR0BGWLaC5SgpCrpHnqCMxHoextqptEu+KEUUnQ/Q4gx0dHPuekGtYWZzSyErUksVBw4D1HJoAtW3xLIlWiQpJ97BSW+JPxDdHR0XHtEl2WxTFtJmBEwhx7JZQdcMOTQWLNa5fhnImjSam6W/OnHmI6OhvoCbHPmqcTJJltnfSsHgRXqIottbWmJmlMtTBLA/mxPq3KFjozC//9k=');
+      background-size: cover;
+      background-position: center;
+      font-family: Arial, sans-serif;
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+    #studyPlanner, #timeTablePage {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(53, 22, 22, 0.7);
+      padding: 50px;
+      border-radius: 10px;
+      width: 500px;
+      text-align: center;
+    }
+    button {
+      background-color: #5cd95c;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    .remove-btn {
+      background-color: #e74c3c;
+      color: white;
+      padding: 5px 10px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      margin-left: 10px;
+    }
+    .remove-btn:hover {
+      background-color: #c0392b;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+      background-color: #fefdfd;
+      color: #333;
+    }
+    #generatedTimeTable {
+      background-color: rgba(16, 0, 0, 0.8);
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 20px;
+      text-align: left;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="studyPlanner">
+    <h1>Study Planner</h1>
+    <form id="taskForm">
+      <input type="text" id="taskName" placeholder="Task name" required />
+      <input type="text" id="taskSubject" placeholder="Subject" required />
+      <input type="date" id="taskDue" required />
+      <button type="submit">Add Task</button>
+    </form>
+    <ul id="taskList"></ul>
+    <button id="nextBtn">Next</button>
+  </div>
+  <div id="timeTablePage" style="display: none;">
+    <h1>Generate Time Table</h1>
+    <form id="timeTableForm">
+      <input type="time" id="startTime" required />
+      <input type="time" id="endTime" required />
+      <textarea id="subjects" placeholder="Enter subjects separated by commas" required></textarea>
+      <textarea id="topics" placeholder="Enter topics for each subject separated by commas" required></textarea>
+      <button type="submit">Generate Time Table</button>
+    </form>
+    <div id="generatedTimeTable"></div>
+  </div>
+  <script>
+    const taskForm = document.getElementById('taskForm');
+    const taskList = document.getElementById('taskList');
+    const nextBtn = document.getElementById('nextBtn');
+    const studyPlanner = document.getElementById('studyPlanner');
+    const timeTablePage = document.getElementById('timeTablePage');
+    const timeTableForm = document.getElementById('timeTableForm');
+    const generatedTimeTable = document.getElementById('generatedTimeTable');
+
+    let tasks = JSON.parse(localStorage.getItem('studyTasks')) || [];
+
+    function saveTasks() {
+      localStorage.setItem('studyTasks', JSON.stringify(tasks));
+    }
+
+    function getTimeDifferenceInHours(dueDate) {
+      const now = new Date();
+      const due = new Date(dueDate);
+      const timeDiff = due - now;
+      return timeDiff / (1000 * 60 * 60);
+    }
+
+    function renderTasks() {
+      taskList.innerHTML = '';
+      tasks.forEach((task, index) => {
+        const timeDiff = getTimeDifferenceInHours(task.due);
+        const isReminder = timeDiff <= 24 && timeDiff > 0;
+        const reminderMessage = isReminder
+          ? `<span style="color: yellow;">Reminder: Due in ${Math.ceil(timeDiff)} hours</span>`
+          : '';
+
+        const li = document.createElement('li');
+        li.innerHTML = `
+          <div>
+            <strong>${task.name}</strong> (${task.subject}) - Due: ${task.due}
+            ${reminderMessage}
+          </div>
+          <div>
+            <button class="remove-btn" onclick="removeTask(${index})">Remove</button>
+          </div>
+        `;
+        taskList.appendChild(li);
+      });
+    }
+
+    function addTask(name, subject, due) {
+      tasks.push({ name, subject, due });
+      saveTasks();
+      renderTasks();
+    }
+
+    function removeTask(index) {
+      tasks.splice(index, 1);
+      saveTasks();
+      renderTasks();
+    }
+
+    taskForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('taskName').value.trim();
+      const subject = document.getElementById('taskSubject').value.trim();
+      const due = document.getElementById('taskDue').value;
+      if (name && subject && due) {
+        addTask(name, subject, due);
+        taskForm.reset();
+      }
+    });
+
+    timeTableForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const startTime = document.getElementById('startTime').value;
+      const endTime = document.getElementById('endTime').value;
+      const subjects = document.getElementById('subjects')
+        .value
+        .split(',')
+        .map(s => s.trim());
+      const topics = document.getElementById('topics')
+        .value
+        .split(',')
+        .map(t => t.trim());
+
+      if (subjects.length > 0 && topics.length > 0) {
+        generateTimeTable(startTime, endTime, subjects, topics);
+      } else {
+        alert('Please enter subjects and topics.');
+      }
+    });
+
+    function generateTimeTable(startTime, endTime, subjects, topics) {
+      const start = new Date(`1970-01-01T${startTime}:00`);
+      const end = new Date(`1970-01-01T${endTime}:00`);
+      const diffMs = end - start;
+      const timeDiff = diffMs / (1000 * 60);
+
+      if (timeDiff <= 0) {
+        alert('End time must be after start time.');
+        return;
+      }
+      const totalStudyTime = timeDiff - (subjects.length - 1) * 10;
+      const studySessionTime = Math.floor(totalStudyTime / subjects.length);
+
+      let timetableHTML = '<h2>Generated Time Table</h2><ul>';
+      let currentTime = start;
+
+      subjects.forEach((subject, index) => {
+        const topic = topics[index] || 'No topic specified';
+        const endSession = new Date(currentTime.getTime() + studySessionTime * 60000);
+        timetableHTML += `
+          <li>
+            <strong>${subject}</strong> - ${topic} <br>
+            ${currentTime.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })} to ${endSession.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
+          </li>
+        `;
+        currentTime = new Date(endSession.getTime() + 10 * 60000);
+      });
+
+      timetableHTML += '</ul>';
+      generatedTimeTable.innerHTML = timetableHTML;
+      timeTablePage.style.display = 'block';
+      studyPlanner.style.display = 'none';
+    }
+
+    nextBtn.addEventListener('click', () => {
+      studyPlanner.style.display = 'none';
+      timeTablePage.style.display = 'block';
+    });
+
+    renderTasks();
+  </script>
+</body>
+</html>
